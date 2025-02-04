@@ -24,5 +24,5 @@ def weather_view(request):
             else:
                 weather_data['error'] = 'City not found.'
 
-    # Ensure the function always returns an HttpResponse object
+
     return render(request, 'weather/weather.html', {'form': form, 'weather_data': weather_data})
